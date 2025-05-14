@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: stream-cost-dashboard
+  description: View cost per substream from CloudZero API
+  tags:
+    - billing
+    - streams
+spec:
+  type: website
+  lifecycle: experimental
+  owner: guests
+  system: examples

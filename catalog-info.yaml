@@ -2,12 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: stream-cost-dashboard
-  description: View cost per substream from CloudZero API
+  description: A dashboard component to visualize cost data per stream and substream using CloudZero API integration.
   tags:
     - billing
     - streams
+    - dashboard
+    - cloudzero
+    - analytics
+  annotations:
+    backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
-  lifecycle: experimental
-  owner: guests
-  system: examples
+  type: service
+  lifecycle: production
+  owner: cost-analysis-team
+  system: cost-visualization-platform
+  providesApis:
+    - stream-cost-api
+  consumesApis:
+    - cloudzero-billing-api

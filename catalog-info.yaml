@@ -7,16 +7,7 @@ metadata:
     - billing
     - streams
     - dashboard
-    - cloudzero
-    - analytics
-  annotations:
-    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
-  lifecycle: production
-  owner: cost-analysis-team
-  system: cost-visualization-platform
-  providesApis:
-    - stream-cost-api
-  consumesApis:
-    - cloudzero-billing-api
+  lifecycle: Development
+  owner: guests

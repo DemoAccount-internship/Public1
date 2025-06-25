@@ -10,4 +10,4 @@ metadata:
 spec:
   type: service
   lifecycle: Development
-  owner: guests
+  owner: guest

@@ -9,5 +9,5 @@ metadata:
     - dashboard
 spec:
   type: service
-  lifecycle: Development
+  lifecycle: development
   owner: guests
